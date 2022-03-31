@@ -82,8 +82,8 @@ sub   rsa3072 2022-03-21 [E] [expires: 2024-03-20]
 
 Для экспорта ключей введите команды (на месте `public_key_file` и `private_key_file` укажите желаемые пути до файлов):
 ```
-gpg --export <uid> --armor --output <public_key_file> для экспорта публичного ключа
-gpg --export-secret-key <uid> --armor --output <private_key_file> для экспорта приватного ключа
+gpg --armor --export --output <public_key_file> <uid> для экспорта публичного ключа
+gpg --armor --export-secret-key --output <public_key_file> <uid> для экспорта приватного ключа
 ```
 
 Если при создании ключей была указана парольная фраза, при экспорте приватного ключа ее понадобится ввести.
