@@ -26,7 +26,7 @@ psql -U user -d database
 
 ## Полезные ссылки
 
-> В случае, если параметр содержит в себе символы '-' (например имя пользователя: `my-user`), его нужно оборачивать в двойные кавычки: `create user "my-user"`
+> В случае, если параметр содержит в себе символы '-' или заглавные буквы (например имя пользователя: `my-user`, `myUser`), его нужно оборачивать в двойные кавычки: `create user "my-user"` 
 
 - Создать базу; создать пользователя; дать пользователю права на работу с базой: [тык](https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e)
 - [Создать таблицу](https://www.tutorialspoint.com/postgresql/postgresql_create_table.htm)
