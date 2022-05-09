@@ -6,6 +6,8 @@
 ```
 docker run --name localhost-postgres -p 5432:5432 -e POSTGRES_USER=some_user -e POSTGRES_PASSWORD=some_password -e POSTGRES_DB=default_db_name -d postgres
 ```
+- ```--name``` - аргумент параметра задает название контейнеру
+
 Здесь указано несколько переменных окружения (флаги `-e`):
 - POSTGRES_USER — имя суперпользователя
 - POSTGRES_PASSWORD — пароль суперпользователя
