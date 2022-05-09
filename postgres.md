@@ -15,6 +15,12 @@ docker run --name localhost-postgres -p 5432:5432 -e POSTGRES_USER=some_user -e 
 
 За дополнительной информацией можно обратиться [сюда](https://hub.docker.com/_/postgres).
 
+## Подключение к контейнеру Postgress
+
+```
+sudo docker exec -i -t {container-id} /bin/bash
+```
+
 ## Подключение к Postgres через psql
 
 Команда для подключения:
