@@ -54,6 +54,20 @@ uid           [TRUST_LEVEL] NAME <EMAIL>
 sub   rsa3072 2022-03-21 [E] [expires: 2024-03-20]
 ```
 
+Стоит сразу сделать ключ без срочными 
+```
+gpg --list-keys
+gpg --edit-key (key id)
+Now you're in the gpg console. (By default, you're working on the primary key.) If you need to update a sub-key:
+
+gpg> key 1
+Now you can set the expiration for the selected key:
+
+gpg> expire
+(follow prompts)
+gpg> save
+```
+
 > Информация о вашем ключе будет отличаться от приведенной здесь.
 Образец вывода показан для объяснения нужных в дальнейшей работе полей
 
